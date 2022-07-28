@@ -46,20 +46,20 @@
     alguns comandos para atualizar o sistema e deixá-lo preparado
     para a instalação do docker.
 
-    ### Atualização dos pacotes
-        ``` console
-        $ sudo apt update
-        ```
+### Atualização dos pacotes
+``` console
+$ sudo apt update
+```
 
-    ### Atualização do sistema
-            ``` console
-            $ sudo apt upgrade
-            ```
+### Atualização do sistema
+``` console
+$ sudo apt upgrade
+```
 
-    ### Reinicie o sistema
-            ``` console
-            $ reboot
-            ```
+### Reinicie o sistema
+``` console
+$ reboot
+```
 
 ### Instalação do Docker desktop
 
@@ -70,46 +70,52 @@
      1º - Clicar com o botão direito do mouse sobre o arquivo e escolhe Software Install
 
      2º - Abrir o terminal e ir até a pasta(diretório) download e executar o comando de instalação:
-                ``` console
-                    $ sudo apt install ./docker-desktop-4.10.1-amd64.deb
-                ```
+``` console
+$ sudo apt install ./docker-desktop-4.10.1-amd64.deb
+```
 
-    ### Caso retorne mensagem de erro referente ao docker-ce e/ou docker-cli, execute os comandos abaixo:
-                ``` console
-                    $ sudo apt update
-                    $ sudo apt-get install \
-                            ca-certificates \
-                            curl \
-                            gnupg \
-                            lsb-release
-                ```
+### Caso retorne mensagem de erro referente ao docker-ce e/ou docker-cli, execute os comandos abaixo:
+``` console
+$ sudo apt update
+$ sudo apt-get install \
+ca-certificates \
+curl \
+gnupg \
+lsb-release
+```
             Adicionar as chaves de GPG oficiais do docker
-                ``` console
-                    $ sudo mkdir -p /etc/apt/keyrings
-                    $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-                ```
+``` console
+$ sudo mkdir -p /etc/apt/keyrings
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+```
             Use o comando abaixo para carregar o repositório de pacotes
-                ``` console
-                    $ echo \
-                    "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-                    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-                ```
-            ### Instalação do Docker Engine
-                ``` console
-                    $ sudo apt-get update
-                    $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-                ```
-            ### Após a instalação das dependências você deve executar  o comando de instalação do docker desktop
-                 ``` console
-                    $ sudo apt install ./docker-desktop-4.10.1-amd64.deb
-                ```
+``` console
+$ echo \
+"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+### Instalação do Docker Engine
+``` console
+$ sudo apt-get update
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+```
+### Após a instalação das dependências você deve executar  o comando de instalação do docker desktop
+``` console
+$ sudo apt install ./docker-desktop-4.10.1-amd64.deb
+```
 
 ## Instalando a Imagem e o Container de MySQL no docker
 
 ### Vamos usar volume neste exemplo
 
     Crie uma pasta(diretório) chamada data_docker, no home do usuário, execute o seguinte comando:
-        ``` console
-        $ docker run --name servidor-mysql -v ~/data_docker:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=alunos@123 -d mysql:8.0.29
-        ```
+``` console
+$ docker run --name servidor-mysql -v ~/data_docker:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=alunos@123 -d mysql:8.0.29
+```
     Agora, abra o docker-destok e veja o seu container rodando.
+    
+<div align="center">
+<img src="dockerdesktop.png" width="650" height="350">
+</div>
+    
+    
