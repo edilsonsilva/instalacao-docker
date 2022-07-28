@@ -4,6 +4,10 @@
 
 ### Virtual Box
 
+<div align="center">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVtgaLlZ9iOhrIHjDpAFhg1gLzVP0rt7mjG9H3PISxa7WtYZTiRWUmaV2zKYFTwwJhj7E&usqp=CAU" width="100" height="100"/>
+   </div>
+
     VirtualBox é um software de virtualização desenvolvido pela empresa Innotek, comprado pela Sun Microsystems, que por fim, foi comprada pela Oracle.
 
     É indicado tanto para pessoas físicas quanto para jurídicas de qualquer porte ou segmento, visando um bom desempenho em hardwares x86, voltado então para servidores, desktops e uso integrado.
@@ -15,13 +19,23 @@
      processador e habilitar "Habilitar VT-x/AMD-V Aninhado
 
 ### Linux Ubuntu 22.04
+<div align="center">
+
+    <img width="100" height="100" src="https://styles.redditmedia.com/t5_2qh62/styles/communityIcon_y7anc8ltwpu81.jpg?width=256&s=82a65ff356d58370bffc004f31d4b09a5a7610d1" />
+
+</div>
+
+
 
     Ubuntu é um sistema operacional ou sistema operativo de código aberto, construído a partir do núcleo Linux, baseado no Debian e utiliza GNOME como ambiente de desktop de sua mais recente versão com suporte de longo prazo. Esta distribuição Linux é desenvolvida pela Canonical Ltd.
 
     https://ubuntu.com/download/desktop/thank-you?version=22.04&architecture=amd64
 
 ### Docker
+<div align="center">
+    <img src="https://www.svgrepo.com/show/303231/docker-logo.svg" width="100" height="100"/>
 
+</div>
     Docker é um conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêineres. Os contêineres são isolados uns dos outros e agrupam seus próprios softwares, bibliotecas e arquivos de configuração.
 
 ## Configuração e instalação do ambiente
